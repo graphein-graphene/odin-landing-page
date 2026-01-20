@@ -1,5 +1,6 @@
 * {
     box-sizing: border-box;
+    min-width: none;
 }
 body {
     display: flex;
@@ -30,7 +31,7 @@ button {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    row-gap: 50px;
 }
 
 .header-logo {
@@ -41,7 +42,7 @@ ul {
     display: flex;
     padding: 0;
     list-style-type: none;
-    gap: 25px;
+    column-gap: 25px;
 }
 
 a {
@@ -54,22 +55,26 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 75px 0px;
+    padding: 75px 150px;
     flex-wrap:wrap;
-    gap: 50px;
+    column-gap: 100px;
+    row-gap: 50px;
 }
 
 .hero-text {
     display: flex;
-    align-self: baseline;
     flex-direction: column;
-    flex: 1 1 300px;
-    gap: 35px;
+    flex: 3 1 300px;
+    row-gap: 35px;
+}
+
+.hero-text .secondary-text {
+    max-width: 55ch;
 }
 .h-para {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    row-gap: 10px;
 }
 .hero-main-text {
     font-size: 48px;
@@ -92,7 +97,7 @@ a {
     height: 100%;
     padding: 0 px;
     border-radius: 5px;
-    flex: 1;
+    flex: 1 1 20%;
 }
 
 /* info section */
@@ -104,7 +109,7 @@ a {
     justify-content: center;
     color: #1f2937;
     padding: 40px 75px;
-    gap: 40px;
+    row-gap: 40px;
 }
 
 .info-header {
@@ -128,7 +133,7 @@ a {
     padding: 0;
     text-align: center;
     width: 200px;
-    gap: 16px;
+    row-gap: 16px;
 }
 .info-sub {
     margin: 0;
@@ -149,7 +154,7 @@ a {
     padding: 50px 75px;
     background-color: #e5e7eb;
     color: #1f2937;
-    gap: 25px;
+    row-gap: 25px;
 }
 
 .quote-text {
@@ -189,7 +194,7 @@ a {
 }
 
 .call-window .h-para {
-    gap: 5px;
+    row-gap: 5px;
 }
 .call-window .secondary-text {
     font-weight: 300;
